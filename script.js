@@ -9,6 +9,9 @@
 	if (window.innerWidth < 600.01) {
 	document.getElementById("menunav").style.display = "none"; 
 	}
+	 if (window.innerWidth >599.99) {
+	document.getElementById("menunav").style.display = "block"; 
+	}
 	
 }
 
