@@ -63,3 +63,4 @@ function OdkrZamk()
     document.getElementById("menunav").style.display = "block"; 	
   }
 }
+ 
