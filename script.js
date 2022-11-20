@@ -1,4 +1,4 @@
- function menu(typ){
+  function menu(typ){
 	var main=document.getElementsByClassName("tresc")
 	for (let m of main){
 	m.style.display = "none";	
@@ -9,18 +9,25 @@
 	if (window.innerWidth < 600.01) {
 	document.getElementById("menunav").style.display = "none"; 
 	}
-	 if (window.innerWidth >599.99) {
-	document.getElementById("menunav").style.display = "block"; 
-	}
+	 
 	
 }
 function pokaz(){
-   var width = screen.width;
-   if( width >= 600.01 ){
-     document.getElementById("menunav").style.display = "show";
-  }
+   if (window.innerWidth >599.99) {
+	document.getElementById("menunav").style.display = "block"; 
+   if(window.scrollY==0){
+	  document.getElementById("menunav").style.backgroundColor = "";  
+   }
+   else {
+	 document.getElementById("menunav").style.backgroundColor = "white";  
+   }
+   }
+	else{
+		document.getElementById("menunav").style.display = "none"; 
+document.getElementById("menunav").style.backgroundColor = "white"; 		
+	}
 }
-	
+
 	window.addEventListener('scroll', function() {
 	var scroll = window.scrollY;
   var bar = document.querySelector('#menunav');
