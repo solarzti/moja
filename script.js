@@ -14,7 +14,12 @@
 	}
 	
 }
-
+function pokaz(){
+   var width = screen.width;
+   if( width >= 600.01 ){
+     document.getElementById("menunav").style.display = "show";
+  }
+}
 	
 	window.addEventListener('scroll', function() {
 	var scroll = window.scrollY;
